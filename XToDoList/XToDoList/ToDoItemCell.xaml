@@ -3,11 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XToDoList.ToDoItemCell">
     <ViewCell.View>
-        <StackLayout Orientation="Horizontal">
+        <StackLayout Orientation="Horizontal" VerticalOptions="Fill">
             <StackLayout Orientation="Vertical">
                 <Label Text="{Binding Title, Mode=OneWay}"/>
                 <Label Text="{Binding Description, Mode=OneWay}"/>
             </StackLayout>
+            <Button x:Name="EditBtn" Image="EditBtnIcon.png" Clicked="OnEditBtnClick" HorizontalOptions="CenterAndExpand"/>
         </StackLayout>
     </ViewCell.View>
 </ViewCell>

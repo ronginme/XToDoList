@@ -9,12 +9,18 @@ using Xamarin.Forms.Xaml;
 
 namespace XToDoList
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class ToDoItemCell : ViewCell
-	{
-		public ToDoItemCell ()
-		{
-			InitializeComponent ();
-		}
-	}
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class ToDoItemCell : ViewCell
+    {
+        public ToDoItemCell()
+        {
+            InitializeComponent();
+        }
+
+        private void OnEditBtnClick(object sender, EventArgs e)
+        {
+            var mainPage = Application.Current.MainPage;
+            mainPage.Navigation.PushModalAsync(new EditPage());
+        }
+    }
 }

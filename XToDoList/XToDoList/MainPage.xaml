@@ -15,8 +15,8 @@
         </ListView>
 
         <StackLayout Orientation="Horizontal">
-            <Button Text="Click me1"/>
-            <Button Text="Click me2"/>
+            <Button Text="Add new"/>
+            <Button Text="Date filter"/>
         </StackLayout>
 
     </StackLayout>

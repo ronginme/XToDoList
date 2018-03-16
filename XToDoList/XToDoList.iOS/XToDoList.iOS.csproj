@@ -128,4 +128,7 @@
       <Name>XToDoList</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\EditBtnIcon.png" />
+  </ItemGroup>
 </Project>
